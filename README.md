@@ -254,11 +254,11 @@ Hence we consider xgboost for prediction of live data and deployment in the appl
 
 **Web App**
 
-2. Main Idea of Application will be predicting or forecasting these earthquake sites on given day all over the world.
+1. Main Idea of Application will be predicting or forecasting these earthquake sites on given day all over the world.
 
-3. The user has option to change the date using a slider and look at predicted places all over the world where earthquake is likely to happen.
+2. The user has option to change the date using a slider and look at predicted places all over the world where earthquake is likely to happen.
 
-4. Application uses google maps [api](https://developers.google.com/maps/documentation), hence the coordinates we get from the prediction of our model needs to be converted to api format. This has been done and can be viewed `Webapp/main.py`
+3. Application uses google maps [api](https://developers.google.com/maps/documentation), hence the coordinates we get from the prediction of our model needs to be converted to api format. This has been done and can be viewed `Webapp/main.py`
 
 
 ### Improvement and conclusion
