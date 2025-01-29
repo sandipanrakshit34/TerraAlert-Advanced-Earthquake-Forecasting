@@ -3,6 +3,7 @@
 A realtime earthquake predictor web app with google maps API, that forecasts earthquake possible epicenters and places in window of next 7 days.
 
 
+
 ### Code files
 
 * `Data/` : Notebook and HTML file `ETL_USGS_EarthQuake.ipybn` for ETL and EDA part of the project, and it also contains cleaned data in Earthquake.db & Earthquake_data.db format saved after ETL process
