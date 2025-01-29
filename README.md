@@ -128,8 +128,9 @@ Data Info:-
 
 **Null values**
 Input to model from dataset has many important features to consider as `time`,`latitude & longitude`,`depth of quake`,`magnitude`,`place`, rest other features are error and non supporting features for classification, below shows the null value counts for some features and what to do with that.
+<br>
 <img src="Images/info.png" width="600" height="300" />
-
+<br>
 * We can see lots of null values of certain features, but as part of prediction most of the features that address 'error' in measurement have missing values, thus for feature selection we consider only certain features in final dataframe, hence I choose simply **drop or ignore the null values**.
 
 * Apart from features in dataset we focus on, I have done some feature Engineering based on some considerations on my model as follows:
@@ -207,7 +208,7 @@ A better walkthrough is mentioned with great detail in `models/Earthquake-predic
 
 **DecisionTreeClassifier adaboost**
 
-![DecisionTreeClassifier evaluation](https://github.com/aditya-167/Realtime-Earthquake-forecasting/blob/master/Images/DecisionTree.jpg)
+![DecisionTreeClassifier evaluation](Images/DecisionTree.jpg)
 
 1. With **adaboost decision tree classifier** and hyper parameter tunning, we get area under curve (score) = 0.8867
 2. higher the auc score, better is the model since it is better at distinguishing postive and negative classes.
@@ -219,7 +220,7 @@ model selection is based on metrics score after comaparing all the algorithm sco
 
 **RandomForesClassifier adaboost**
 
-![RandomForestClassifier evaluation](https://github.com/aditya-167/Realtime-Earthquake-forecasting/blob/master/Images/RandomForest.png)
+![RandomForestClassifier evaluation](Images/RandomForest.png)
 
 1. Below is the auc score for **adaboost RandomForest classifier** with 0.916 which is slightly lower than Decision tree classifier
 2. Moreover when we look at **confusion matrix**, `False Negative=38` and `Recall score = 0.8' can be observed which is slightly higher than recall score of decision tree. Thus performs better than decision tree adabooost 
@@ -230,7 +231,7 @@ model selection is based on metrics score after comaparing all the algorithm sco
 
 **XGBoost model**
 
-![XGBoost](https://github.com/aditya-167/Realtime-Earthquake-forecasting/blob/master/Images/XGboost.jpg)
+![XGBoost](Images/XGboost.jpg)
 
 1. I have also tested with xgboost model below with similar parameters as I got above, since grid search CV was taking lot of time for xgboost.
 
@@ -250,7 +251,7 @@ Hence we consider xgboost for prediction of live data and deployment in the appl
 
 **Prediction for a particular day**
 
-![prediction](https://github.com/aditya-167/Realtime-Earthquake-forecasting/blob/master/Images/predict.jpg)
+![prediction](Images/predict.jpg)
 
 **Web App**
 
