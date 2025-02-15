@@ -2,73 +2,6 @@
 
 A realtime earthquake predictor web app with google maps API, that forecasts earthquake possible epicenters and places in window of next 7 days.
 
-
-
-### Code files
-
-* `Data/` : Notebook and HTML file `ETL_USGS_EarthQuake.ipybn` for ETL and EDA part of the project, and it also contains cleaned data in Earthquake.db & Earthquake_data.db format saved after ETL process
-
-* `models/` : Notebook and HTML file `Earthquake-prediction-ML-workflow.ipybn` which has all the implementation after related to Prediction steps and Machine Learning pipeline.
-
-* `Webapp/` : all the necessary routing python files in `main.py` for flask application i.e from data extraction to modeling application and convert prediction co-ordinates to google maps api format.
-
-I have implemented all the neccesary steps in these IPYBN notebooks. I recommend for project walkthrough follow -
-
-  1. For ETL walkthrough open `Data/ETL_USGS_EarthQuake.ipybn` or `Data/ETL_USGS_EarthQuake.html`
-
-  2. Next, go to `models/Earthquake-prediction-ML-workflow.ipybn` or `models/Earthquake-prediction-ML-workflow.html` for ML and workflow. 
-
-
-### Instructions to run the project
-
-
-**Requirements**
- 
-1. click==7.1.2
-2. Flask==1.1.2
-3. gunicorn==20.0.4
-4. itsdangerous==1.1.0
-5. Jinja2==2.11.2
-6. joblib==0.16.0
-7. MarkupSafe==1.1.1
-8. numpy==1.19.1
-9. pandas==1.1.0
-10. python-dateutil==2.8.1
-11. pytz==2020.1
-12. scikit-learn==0.23.1
-13. scipy==1.5.2
-14. six==1.15.0
-15. sklearn==0.0
-16. SQLAlchemy==1.3.18
-17. threadpoolctl==2.1.0
-18. Werkzeug==1.0.1
-19. xgboost==1.1.1
-20. python3.x
-
-
-**Linux/Mac Users**
-
-Note for **windows user** : install gitbash and proceed with same instruction as linux.
-
-`step 1` : `$ git clone https://github.com/aditya-167/Realtime-Earthquake-forecasting.git`
-
-`step 2` : `$ cd Realtime-Earthquake-forecasting`
-
-`step 3` : `$ python3 -m venv <<any environment name>>` (If error occurs, download virtual 
-environment for python)
-
-`step 4` : `$ source <<any environment name>>/bin/activate`
-
-`step 5` : `$ pip install --upgrade pip `
-
-`step 6` : `$ pip install -r requirements.txt` (If error occurs in xgboost installation, upgrade pip 
-using step 5)
-
-`step 7` : Run application with `$ python application.py` i.e in root directory of project repo.
-
-`step 8` : Go to local host when application starts and use slider to choose dates for prediction in app.
-
-
 ## Contents
 
    * Project Overview
@@ -253,14 +186,6 @@ Hence we consider xgboost for prediction of live data and deployment in the appl
 **Prediction for a particular day**
 
 ![prediction](Images/predict.jpg)
-
-**Web App**
-
-1. Main Idea of Application will be predicting or forecasting these earthquake sites on given day all over the world.
-
-2. The user has option to change the date using a slider and look at predicted places all over the world where earthquake is likely to happen.
-
-3. Application uses google maps [api](https://developers.google.com/maps/documentation), hence the coordinates we get from the prediction of our model needs to be converted to api format. This has been done and can be viewed `Webapp/main.py`
 
 
 ### Improvement and conclusion
