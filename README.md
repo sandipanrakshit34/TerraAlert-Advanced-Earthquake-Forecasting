@@ -80,13 +80,6 @@ Input to model from dataset has many important features to consider as `time`,`l
 
 <img src="Images/class_distrib.png" width="900" height="300" />
 
-* Accuracy is not the metric to use when working with an imbalanced dataset. We have seen that it is misleading.There are metrics that have been designed to tell you a more truthful story when working with imbalanced classes. such as collect more data, change metrics, resampling data, cross-validation dataset etc.
-For the project I have considered the metrics for treating this imbalance nature with-
-1. Confusion Matrix: A breakdown of predictions into a table showing correct predictions (the diagonal) and the types of incorrect predictions made (what classes incorrect predictions were assigned).
-2. Recall: A measure of a classifiers completeness
-3. ROC Curves: Like precision and recall, accuracy is divided into sensitivity and specificity and models can be chosen based on the balance thresholds of these values.
-
-* Moreover the reason for choosing this metrics not only helps me improve class imbalance comfirmation bias but also due to my nature of problem to be solved of earthquake prediction False negative must be penalized more.
 
 **Lets analyse places with top 20 higher & lower number of magnitude mean**
 
