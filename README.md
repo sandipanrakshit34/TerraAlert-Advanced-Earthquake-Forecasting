@@ -1,6 +1,6 @@
 # TerraAlert: Advanced Earthquake Forecasting
 
-A realtime earthquake predictor web app with google maps API, that forecasts earthquake possible epicenters and places in window of next 7 days.
+A realtime earthquake predictor web app with google maps API, that forecasts earthquake possible epicenters and places in window of next 7 days.   
 
 ## Contents
 
